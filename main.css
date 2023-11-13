@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+header {
+    display:flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+}
+
+form button {
+    font-size: 20px;
+    padding: 8px;
+
+}
+
+form input {
+    font-size: 20px;
+    padding: 8px;
+    margin-right: 5px;
+}
