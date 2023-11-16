@@ -1,8 +1,12 @@
-const form = document.getElementById('texto')
-form.addEventListener('submit', function (e){
-    e.preventDefault();
+$(document).ready(function() {
+    $('form button').click(function() {
+        
+    })
 
-const ListaDeTarefa = document.getElementById('lista');
-
-    alert(`Tarefa:${ListaDeTarefa.value}`);
-});
+    $('form').on('submit', function(e){
+        e.preventDefault();
+        const inputListaDeTarefas = $('texto').val();
+        const novaTarefa = $('<li></li>');
+        console.log $(inputListaDeTarefas)
+    })
+}) 
