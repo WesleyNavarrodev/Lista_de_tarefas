@@ -7,6 +7,6 @@ $(document).ready(function() {
         e.preventDefault();
         const inputListaDeTarefas = $('texto').val();
         const novaTarefa = $('<li></li>');
-        console.log $(inputListaDeTarefas)
+        $(`inputListaDeTarefas/>`).apendTo(novaTarefa);
     })
 }) 
