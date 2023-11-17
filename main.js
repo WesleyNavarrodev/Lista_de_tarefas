@@ -5,8 +5,14 @@ $(document).ready(function() {
 
     $('form').on('submit', function(e){
         e.preventDefault();
-        const inputListaDeTarefas = $('texto').val();
-        const novaTarefa = $('<li></li>');
-        $(`inputListaDeTarefas/>`).apendTo(novaTarefa);
+        const inputListaDeTarefas = $("#texto").val();
+        const novaTarefa = $(`<li>${inputListaDeTarefas}</li>`);
+        $("#lista").append(novaTarefa);
     })
-}) 
+})
+
+$(document).ready(function(e){
+    $('lista').on('click', 'li', function(){
+        $(e).line-through('lista-completa')
+    })
+})

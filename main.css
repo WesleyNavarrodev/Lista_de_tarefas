@@ -36,3 +36,7 @@ form input {
     padding: 8px;
     margin-right: 5px;
 }
+
+.line-through {
+    text-decoration: line-through;
+}
