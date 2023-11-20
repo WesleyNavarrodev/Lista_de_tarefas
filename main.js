@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('form button').click(function() {
         
-    })
+    });
 
     $('form').on('submit', function(e){
         e.preventDefault();
@@ -11,8 +11,8 @@ $(document).ready(function() {
     })
 })
 
-$(document).ready(function(e){
-    $('lista').on('click', 'li', function(){
-        $(e).line-through('lista-completa')
-    })
-})
+$(document).ready(function() {
+    $('#lista').on('click', 'li', function(){
+        $(this).toggleClass('completed')
+    });
+});
